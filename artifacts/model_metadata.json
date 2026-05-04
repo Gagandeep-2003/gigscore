@@ -1,0 +1,138 @@
+{
+  "model_name": "LightGBM Stacking Ensemble",
+  "version": "1.0.0",
+  "trained_date": "2026-05-05",
+  "n_features": 37,
+  "n_training_samples": 70000,
+  "best_model": "Stacking Ensemble",
+  "best_auc_roc": 0.8605,
+  "best_gini": 0.721,
+  "best_ks_statistic": 56.46,
+  "optimal_threshold": 0.57,
+  "total_training_samples": 70000,
+  "total_features": 37,
+  "feature_names": [
+    "income_stability_score",
+    "platform_reliability_score",
+    "income_experience_ratio",
+    "financial_resilience_score",
+    "work_intensity_score",
+    "income_momentum",
+    "income_diversification_score",
+    "debt_stress_score",
+    "earnings_efficiency",
+    "digital_engagement_score",
+    "settlement_stability_score",
+    "lifestyle_risk_score",
+    "multi_platform_bonus",
+    "monthly_earnings_inr",
+    "income_volatility_coefficient",
+    "income_trend_6m",
+    "platform_tenure_months",
+    "platform_rating",
+    "weekly_work_consistency",
+    "cancellation_rate",
+    "upi_transaction_count_monthly",
+    "upi_transaction_consistency_score",
+    "digital_wallet_balance_avg",
+    "rent_to_income_ratio",
+    "late_night_work_ratio",
+    "years_in_city",
+    "age",
+    "vehicle_owned",
+    "data_source",
+    "has_savings_account",
+    "has_life_insurance",
+    "owns_smartphone_above_10k",
+    "active_platforms_count",
+    "dependents_count",
+    "mobile_recharge_frequency",
+    "monthly_trips_or_orders",
+    "income_gap_months_last_year"
+  ],
+  "default_rate": 0.28715,
+  "metrics": {
+    "logistic_baseline": {
+      "auc_roc": 0.8402,
+      "gini": 0.6805,
+      "ks_statistic": 52.01,
+      "f1": 0.6455
+    },
+    "lightgbm": {
+      "auc_roc": 0.8596,
+      "gini": 0.7191,
+      "ks_statistic": 56.33,
+      "f1": 0.679
+    },
+    "xgboost": {
+      "auc_roc": 0.8605,
+      "gini": 0.721,
+      "ks_statistic": 56.23,
+      "f1": 0.6782
+    },
+    "stacking_ensemble": {
+      "auc_roc": 0.8605,
+      "gini": 0.721,
+      "ks_statistic": 56.46,
+      "f1": 0.6784
+    }
+  },
+  "fairness": {
+    "dpd_gender": 0.001,
+    "dpd_income_bracket": 0.150,
+    "dpd_data_source": 0.000
+  },
+  "threshold": 0.57,
+  "dataset_sources": {
+    "home_credit": 0,
+    "give_me_credit": 0,
+    "synthetic_india_gig": 100000
+  },
+  "model_comparison": [
+    {
+      "Model": "Stacking Ensemble",
+      "AUC-ROC": 0.8605,
+      "Gini": 0.721,
+      "KS Stat": 56.46,
+      "F1": 0.6784,
+      "Precision": 0.6428,
+      "Recall": 0.7181,
+      "Brier": 0.1509,
+      "Threshold": 0.6
+    },
+    {
+      "Model": "XGBoost",
+      "AUC-ROC": 0.8605,
+      "Gini": 0.721,
+      "KS Stat": 56.23,
+      "F1": 0.6782,
+      "Precision": 0.6429,
+      "Recall": 0.7177,
+      "Brier": 0.1493,
+      "Threshold": 0.57
+    },
+    {
+      "Model": "LightGBM",
+      "AUC-ROC": 0.8596,
+      "Gini": 0.7191,
+      "KS Stat": 56.33,
+      "F1": 0.679,
+      "Precision": 0.644,
+      "Recall": 0.7179,
+      "Brier": 0.1493,
+      "Threshold": 0.57
+    },
+    {
+      "Model": "Logistic Baseline",
+      "AUC-ROC": 0.8402,
+      "Gini": 0.6805,
+      "KS Stat": 52.01,
+      "F1": 0.6455,
+      "Precision": 0.5685,
+      "Recall": 0.7465,
+      "Brier": 0.1621,
+      "Threshold": 0.51
+    }
+  ],
+  "training_duration_seconds": 126.4
+}

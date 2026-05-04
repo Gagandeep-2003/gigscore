@@ -12,13 +12,13 @@
 ## 📸 Dashboard Preview
 
 ### Applicant Scoring & SHAP Explanations
-![Rahul Scored (Excellent)](/Users/gsingh/Documents/Projects/DS project/gigscore/docs/screenshots/01_rahul_scored_excellent.png)
-![Vikram Scored (Poor)](/Users/gsingh/Documents/Projects/DS project/gigscore/docs/screenshots/02_vikram_scored_poor.png)
-![SHAP Waterfall Chart](/Users/gsingh/Documents/Projects/DS project/gigscore/docs/screenshots/03_shap_waterfall.png)
+![Rahul Scored (Excellent)](docs/screenshots/1_rahul_scored_excellent.png)
+![Vikram Scored (Poor)](docs/screenshots/2_vikram_scored_poor.png)
+![SHAP Waterfall Chart](docs/screenshots/3_shap_waterfall.png)
 
 ### Analytics & Fairness Audit
-![Model Analytics](/Users/gsingh/Documents/Projects/DS project/gigscore/docs/screenshots/04_model_analytics_comparison.png)
-![Fairness Report](/Users/gsingh/Documents/Projects/DS project/gigscore/docs/screenshots/05_fairness_report_summary.png)
+![Model Analytics](docs/screenshots/4_model_analytics_comparison.png)
+![Fairness Report](docs/screenshots/5_fairness_report_summary.png)
 
 ## 🎯 What GigScore Is
 

@@ -1,0 +1,20 @@
+services:
+  # FastAPI Backend (REST API)
+  - type: web
+    name: gigscore-api
+    env: python
+    buildCommand: "pip install -r requirements_exact.txt"
+    startCommand: "uvicorn api.main:app --host 0.0.0.0 --port $PORT"
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.10.12
+
+  # Streamlit Dashboard (Frontend)
+  - type: web
+    name: gigscore-dashboard
+    env: python
+    buildCommand: "pip install -r requirements_exact.txt"
+    startCommand: "streamlit run dashboard/app.py --server.port $PORT --server.address 0.0.0.0"
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.10.12
